@@ -1,0 +1,3 @@
+const phraseListPull = ["If you can change something, change it. If you can't, don't waste time thinking about it. - 'Beidou'", "Only once you know and respect death, can you truly understand the value of life. - 'Hu Tao'", "The world would lose much of its appeal if wholly stripped of delusion and falsehood. - Fischl", "I don't understand why people insist on going all out to try and prove how their existence is more valuable than everyone else's. To exist in the first place is a beautiful thing, and that's enough... isn't it? - 'Ganyu'", "I love it when it snows. The world falls completely silent... and I can sleep undisturbed. - 'Kazuha'"];
+
+
