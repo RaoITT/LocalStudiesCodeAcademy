@@ -1,3 +1,4 @@
+/*------------- Font families--------------- are over here*/
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -79,3 +80,89 @@
     src: url(https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaB.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+  /*------------- Font families--------------- END OVER HERE/*/
+  html, body{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+  
+main{
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    margin-top: 120px;
+}
+
+header {
+    background-color:wheat;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 100px; 
+    top: 0;
+    font-family: "Nunito", 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+header img{
+    height: 100px;
+    height: 80px;
+    float: right;
+    margin: 0;
+    padding-right: 35px;
+    padding-top: 10px;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+header h1 {
+    float: right;
+    color: black;
+    font-family: inherit;
+    font-weight: inherit;
+    padding: 15px;
+    padding-right: 25px;
+
+}
+
+nav{
+    display: inline-block;
+    margin: 0px;
+    padding: 20px;
+}
+
+nav li{
+    display: inline-block;
+    font-weight: 600;
+    width: 140px;
+    font-size: 26px;
+    font-weight: inherit;
+    font-family: inherit;
+    position: relative;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+    background-color: wheat;
+    width: 100%;
+}
+
+footer p{
+    text-align: center;
+    font-family: "Nunito", 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+}
