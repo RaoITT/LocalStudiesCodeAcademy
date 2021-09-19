@@ -5,6 +5,9 @@ html, body {
   
   header {
     background-color: #333333;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
   }
   
   nav {
@@ -17,10 +20,14 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 12px;
+    display: inline-block;
+    width: 80px;
   }
   
   main {
     text-align: center;
+    position: relative;
+    top: 80px;
   }
   
   main h1 {
@@ -38,6 +45,10 @@ html, body {
     background-color: #333;
     color: #fff;
     padding: 30px 0;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
   }
   
   footer p {
@@ -84,15 +95,19 @@ html, body {
     text-transform: uppercase;  
     margin-bottom: 20px;      
   }
-  
+
   .supporting {
     padding-top: 80px;
     padding-bottom: 100px;
+    position: relative;
+    top: 20px;
   }
   
   .supporting .col {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    display: inline-block;
+    width: 200px;
   }
   
   .supporting img {
