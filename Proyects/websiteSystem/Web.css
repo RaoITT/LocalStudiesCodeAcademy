@@ -24,7 +24,7 @@
     src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU4-6qj.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
-  @font-face {
+  @font-face { 
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
@@ -73,7 +73,7 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
   @font-face {
-    font-family: 'Nunito';
+    font-family: 'Nunito'; 
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -96,6 +96,10 @@ main{
     margin-bottom: 180px;
 }
 
+main h4, main h3{
+    font-family: "Nunito", 'Times New Roman', Times, serif;
+}
+
 header {
     background-color:wheat;
     position: fixed;
@@ -103,8 +107,8 @@ header {
     z-index: 10;
     height: 100px; 
     top: 0;
-    font-family: "Nunito", 'Times New Roman', Times, serif;
     font-weight: 800;
+    font-family: "Nunito", 'Times New Roman', Times, serif;
 }
 
 header img{
@@ -158,6 +162,7 @@ section{
     border: 2px solid gray;
     margin: 40px;
     padding-left:40px;
+    
 }
 section h2{
     text-align: center;
@@ -546,6 +551,169 @@ section h2{
     flex-grow: 1;
     border-right: 10px solid #e6e6e6;
 }
+
+.lato{
+    font-family: "Lato", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.lato2{
+    font-weight: bold;
+}
+
+.lato3{
+    font-style: italic;
+}
+
+.abhayalibre{
+    font-family: "Abhaya Libre", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.abhaya2{
+    font-weight: bold;
+}
+
+.abhaya3{
+    font-style: italic;
+}
+
+.merriweather{
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.merriweather2{
+    font-weight: bold;
+}
+
+.merriweather3{
+    font-style: italic;
+}
+
+.alegreya{
+    font-family: "Alegreya", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.alegreya2{
+    font-weight: bold;
+}
+
+.alegreya3{
+    font-style: italic;
+}
+
+.montserrat{
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.montserrat2{
+    font-weight: bold;
+}
+
+.montserrat3{
+    font-style: italic;
+}
+
+.aleo{
+    font-family: "Aleo", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.aleo2{
+    font-weight: bold;
+}
+
+.aleo3{
+    font-style: italic;
+}
+
+.muli{
+    font-family: "Mulish", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.muli2{
+    font-weight: bold;
+}
+
+.muli3{
+    font-style: italic;
+}
+ 
+.arapey{
+    font-family: "Arapey", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.arapey2{
+    font-weight: bold;
+}
+
+.arapey3{
+    font-style: italic;
+}
+
+.nunito{
+    font-family: "Nunito", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.nunito2{
+    font-weight: bold;
+}
+
+.nunito3{
+    font-style: italic;
+}
+
+.asap{
+    font-family: "Asap Condensed", 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.asap2{
+    font-weight: bold;
+}
+
+.asap3{
+    font-style: italic;
+}
+
+.h1{
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Nunito", 'Times New Roman', Times, serif;
+}
+
+.h1main{
+    font-size: 20px;
+}
+
+.h2{
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Asap Condensed", 'Times New Roman', Times, serif;
+}
+
+.h2sub li{
+    font-size: 20px;
+}
+
+.para{
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Asap Condensed", 'Times New Roman', Times, serif;
+}
+
+.p li{
+    font-size: 20px;
+}
+
 
 footer{
     position: absolute;
