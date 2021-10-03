@@ -1,7 +1,133 @@
+*{
+    list-style: none;
+}
+
 html{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 22px;
     color: seashell;
-    background-color: black;
+    background-color: black;  
+    text-align: center;
     opacity: 0.9;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 69px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: black;
+}
+
+header img{
+    height: 50px;
+    margin-left: 10px;
+}
+
+header nav{
+    display: flex;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    justify-content: flex-end;
+}
+
+header a{
+    padding: 20px;
+    color: inherit;
+}
+
+main{
+    margin-top: 69px;
+}
+
+body .frontpage{
+    background-image: url("./img/img-mission-background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    height: 700px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+body .frontpage h2, body .frontpage h4{
+    margin: 0px;
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+}
+
+section{
+    margin-top: 70px;
+}
+
+section .teamonth{
+    width: 1000px;
+    justify-content: center;
+}
+
+.teamonth ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamonth ul p{
+    margin-top: 10px;
+}
+.teamonth img{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+#locations{
+    height: 500px;
+    width: auto;
+    background-image: url("./img/img-locations-background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.locinfo{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.locinfo li{
+    width: 300px;
+}
+
+footer .contact{
+    height: 200px;
+}
+
+.contact h5{
+    padding: 5px;
+}
+
+footer p{
+    margin-left: 20px;
+    text-align: left;
 }
