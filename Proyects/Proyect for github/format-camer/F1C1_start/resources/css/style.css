@@ -26,6 +26,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100;
 }
 
 @media only screen and (max-width: 760px) {
@@ -41,6 +42,8 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  top: 0;
+  z-index: 10;
 }
 
 header .content {
@@ -51,10 +54,16 @@ header .content {
 
 header .logo {
   flex: 1;
+  margin-left: 30px;
+  font-size: 32px;
+  text-decoration: none;
+  color: #4a4a4a;
 }
 
 header nav ul {
   display: flex;
+  list-style: none;
+  margin: 0px 30px 0px 0px;
 }
 
 nav li {
@@ -66,6 +75,7 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 header .icon {
@@ -117,13 +127,20 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url('../images/banner-landingpage.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
+  position: relative;
+  top: 170px;
+  left: 100px;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20b;  
 }
 
 #sign-up-cta .content {
@@ -149,11 +166,13 @@ header .mobile {
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
+  font-weight: normal;
 }
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
+  font-weight: normal;
 }
 
 #sign-up-cta .button {
@@ -161,7 +180,7 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -193,7 +212,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -226,7 +245,7 @@ header .mobile {
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 32px auto 46px;
 }
 
 .feature h2 {
