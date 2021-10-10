@@ -1,0 +1,80 @@
+html{
+    font-family: "Lexend Mega", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+.top  h1{
+    width: 100%;
+    margin-top: 1em;
+    font-size: 3rem;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+.top a{
+    color: black;
+}
+
+.headmission{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    background-image: url('./img/Background-Mission.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.missioncontent{
+    height: 110px;
+    line-height: 25px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.7;
+}
+
+#portfolio h2, #portfolia h4{
+    padding-top: 100px;
+    font-size: 2em;
+}
+
+.container{
+    font-size: 1.4em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.container img{
+    height: auto;
+    width: 300px;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('./img/TeamBackGround.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.team img{
+    width: 200px;
+    height: auto;
+}
