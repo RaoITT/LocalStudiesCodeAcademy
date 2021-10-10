@@ -78,3 +78,12 @@ header .navbar{
     width: 200px;
     height: auto;
 }
+
+footer{
+    font-size: 1.35em;
+    word-spacing: 5px;
+}
+
+footer p{
+    margin-bottom: 2.2em;
+}
