@@ -1,4 +1,60 @@
 html{
     font-family: 'Asul', 'Times New Roman', Times, serif;
     font-size: 16px;
+    background-color: lightsalmon;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: teal;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+}
+
+.navheader{
+    margin: auto auto 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    font-size: 1.3em;
+}
+
+header img{
+    width: 80px;
+    height: auto;
+}
+
+.topName{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 3em;
+    color: coral;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    height: 120px;
+    width: 100%;
+    align-items: center;
+}
+
+#events{
+    margin-top: 260px;
+}
+
+.greet, #events article p{
+    margin: 0.8em;
+}
+
+.greet{
+    color: yellow;
+    font-size: 2em;
+}
+
+#events article p{
+    padding-left: 0.6em;
+    font-size: 1.3em;
+    color: white;
+    line-height: 1.5em;
+}
+
