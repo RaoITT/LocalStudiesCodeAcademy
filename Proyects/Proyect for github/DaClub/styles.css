@@ -2,6 +2,7 @@ html{
     font-family: 'Asul', 'Times New Roman', Times, serif;
     font-size: 16px;
     background-color: lightsalmon;
+    width: auto;
 }
 
 header{
@@ -58,3 +59,156 @@ header img{
     line-height: 1.5em;
 }
 
+.eventcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    background-image: url('images/eventhree.jpg'); /*<!--https://stellaralgo.com/wp-content/uploads/2019/10/GrowthTennis.jpg-->*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em 0;
+}
+
+.eventcontainer img{
+    height: 300px;
+    width: auto;
+    margin: 4em 8em;
+    border: 10px solid white;
+}
+
+.advisorcontainer{
+    margin-top: 6em;
+    background-color: teal;
+    color: yellow;
+    min-height: 50vh;
+    margin-bottom: 6em;
+}
+
+.invitecontainer{
+    margin-top: 6em;
+    background-color: teal;
+    color: yellow;
+    min-height: 50vh;
+    margin-bottom: 6em;
+}
+
+.advisorcontainer h2{
+    padding-top: 1em;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    margin-left: 0.5em;
+}
+
+.advisorcontainer h5{
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+.facilitycontainer{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('images/facilitytwo.jfif'); /*<!--https://images.unsplash.com/photo-1541744686607-75102f024505?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=819&q=80-->*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em 0;
+}
+
+.facilitycontainer img{
+    height: 300px;
+    width: 300px;
+    margin: 4em 5em;
+    object-fit: cover;
+    border: 10px solid white;
+}
+
+#fun{
+    color: yellow;
+    font-size: 2.75em;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.invitecontainer{
+    margin-top: 6em;
+    background-color: teal;
+    color: yellow;
+    min-height: 50vh;
+    margin-bottom: 6em;
+}
+
+
+.invitecontainer h2{
+    padding-top: 1em;
+    margin-bottom: 40px;
+    font-size: 2.0em;
+    margin-left: 0.5em;
+}
+
+.cafeterycontainer{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('images/cafeteriatwo.gif'); /*<!--https://www.santabarbaratennisclub.com/images/dynamic/getImage.gif?ID=100151-->*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cafeterycontainer img{
+    height: 300px;
+    width: 300px;
+    margin: 4em 5em;
+    object-fit: cover;
+    border: 10px solid white;
+}
+
+.open{
+    text-align: center;
+    padding-top: 0.25em;
+    height: 11vh;
+    color: yellow;
+    font-size: 2.75em;
+    text-align: center;
+    background-color: teal;
+    border-bottom: 10px dashed coral;
+}
+
+footer{
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: teal;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 720px){
+    html{
+        font-size: 10px;
+    }
+
+    .advisorcontainer{
+        min-height: 25vh;
+    }
+    
+    .invitecontainer{
+        min-height: 25vh;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1320px){
+    html{
+        font-size: 12px;
+    }
+
+    .advisorcontainer{
+        min-height: 30vh;
+    }
+    
+    .invitecontainer{
+        min-height: 30vh;
+    }
+}
