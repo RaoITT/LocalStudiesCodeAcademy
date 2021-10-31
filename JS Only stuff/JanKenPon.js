@@ -46,13 +46,18 @@ function determineWinner (userChoice, computerChoice){
 }
 
 function playGame(){
-    var userChoice = getUserChoice('Bomb');
-    var computerChoice = getComputerChoice();
-
-    console.log(`The user is going with: ${userChoice} \n`);
-    console.log(`The computer is going with: ${computerChoice} \n`);
-
-    determineWinner(userChoice, computerChoice);
+    var usChoide = '';
+    var userChoice = require('readline').createInterface({
+        input: process.stdin,
+        output: process.stdout
+      });
+    userChoice.question('Pick rock, paper, or scissor: ', usChoide => {
+        console.log(`User is going with: ${usChoide}`);
+        var computerChoice = getComputerChoice();    
+        console.log(`vs which computer is going with: ${computerChoice}`);
+        determineWinner(usChoide, computerChoice);
+        userChoice.close();
+      });
 }
 
 playGame();
