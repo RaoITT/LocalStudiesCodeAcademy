@@ -9,9 +9,7 @@ export class TrackList extends React.Component{
     render(){
         return(
             <div className="TrackList">
-                <Track  title='first' artist='me' album='none' />
-                <Track  title='second' artist='me' album='none' />
-                <Track  title='third' artist='me' album='none' />
+                {this.props.Track.map(track=> <track key={track.id} track={track} onAdd={this.props.onAdd}/>)}
             </div>
         )
     }
