@@ -4,14 +4,14 @@ import React from 'react'
 export class Track extends React.Component{
     constructor(props){
         super(props);
-        this._bind('addTrack');
+        this._bind('addTrack', 'removeTrack');
     }
 
     renderAction(){
         if(this.props.onAdd) {
             return <a className='Track-Action' onClick={this.addTrack}>+</a>
         }else{
-            return <a className='Track-Action' onClick={this.addTrack}>-</a>
+            return <a className='Track-Action' onClick={this.removeTrack}>-</a>
         }
     }
 
@@ -20,9 +20,7 @@ export class Track extends React.Component{
     }
 
     removeTrack(){
-        
         this.props.onRemove(this.props.track)
-        
     }
 
     render(){
