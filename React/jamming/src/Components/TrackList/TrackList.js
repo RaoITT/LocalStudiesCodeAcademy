@@ -6,11 +6,11 @@ export class TrackList extends React.Component{
     constructor(props){
         super(props);
     }
-    render(){
-        return(
+    render() {
+        return (
             <div className="TrackList">
-                {this.props.Track.map(track=> <track key={track.id} track={track} onAdd={this.props.onAdd}/>)}
-            </div>
-        )
+                {this.props.tracks.map(track => <Track key={track.id} track={track} onRemove={this.props.onRemove} onAdd={this.props.onAdd} />)}
+              </div>
+        );
     }
 }

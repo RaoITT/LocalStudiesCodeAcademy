@@ -4,6 +4,7 @@ import { Playlist } from '../Playlist/Playlist';
 import { SearchBar } from '../SearchBar/SearchBar';
 import { SearchResult } from '../SearchResults/SearchResults';
 import React from 'react';
+import { TrackList } from '../TrackList/TrackList';
 
 export class App extends React.Component {
   constructor(props){
@@ -13,7 +14,7 @@ export class App extends React.Component {
       PlaylistName: 'My Playlist',
       PlaylistTracks: []
     }
-    this._bind('addTrack');
+    this._bind('addTrack', 'removeTrack');
     this.state.SearchResult = SearchResult;
   }
 
@@ -23,6 +24,12 @@ export class App extends React.Component {
         PlaylistTracks: [...prevState.Playlist, track]
       }))
     }
+  }
+
+  removeTrack(track){
+    this.setState({
+      PlaylistTrack: this.state.PlaylistTracks.filter(removeTrack => removeTrack.id === track.id)
+    })
   }
 
   render(){
@@ -36,6 +43,7 @@ export class App extends React.Component {
             <Playlist 
               name={this.state.PlaylistName}
               tracks={this.state.PlaylistTracks}
+              onRemove={this.removeTrack}
               />
 
           </div>
