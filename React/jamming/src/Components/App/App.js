@@ -4,8 +4,8 @@ import { Playlist } from '../Playlist/Playlist';
 import { SearchBar } from '../SearchBar/SearchBar';
 import { SearchResult } from '../SearchResults/SearchResults';
 import React from 'react';
-import { TrackList } from '../TrackList/TrackList';
-import { Spotify} from '../'
+import { Spotify} from '../../util/Spotify'
+
 
 export class App extends React.Component {
   constructor(props){
@@ -41,6 +41,12 @@ export class App extends React.Component {
 
   savePlaylist(){
     const trackURIs = this.state.PlaylistTracks.map(PlaylistTrack => PlaylistTrack.uri)
+    Spotify.savePlaylist(this.state.PlaylistName, trackURIs);
+    this.setState({
+      searchResults: []
+    });
+    this.updatePlaylistName('My Playlist');
+    console.info(trackURIs);
   }
 
   search(lookupTerm){
@@ -72,3 +78,5 @@ export class App extends React.Component {
     );
   }
 }
+
+export default App;
